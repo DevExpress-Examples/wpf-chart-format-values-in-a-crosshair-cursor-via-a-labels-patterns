@@ -1,0 +1,68 @@
+﻿<Window x:Class="UsingCrosshairLabelPattern.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dxc="http://schemas.devexpress.com/winfx/2008/xaml/charts"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <dxc:ChartControl>
+            <!--region #GroupHeaderPattern-->
+            <dxc:ChartControl.CrosshairOptions>
+                <dxc:CrosshairOptions  GroupHeaderPattern="Year: {A}" 
+                                       ShowArgumentLabels="True" ShowArgumentLine="True" 
+                                       ShowValueLabels="True" ShowValueLine="True">
+                </dxc:CrosshairOptions>
+            </dxc:ChartControl.CrosshairOptions>
+            <!--endregion #GroupHeaderPattern-->
+            <dxc:ChartControl.Diagram>
+                <dxc:XYDiagram2D>
+                    <!--region #CrosshairAxisLabelPattern-->
+                    <dxc:XYDiagram2D.AxisX>
+                        <dxc:AxisX2D>
+                            <dxc:AxisX2D.CrosshairAxisLabelOptions>
+                                <dxc:CrosshairAxisLabelOptions Pattern="Year: {A:F0}" />
+                            </dxc:AxisX2D.CrosshairAxisLabelOptions>
+                        </dxc:AxisX2D>
+                    </dxc:XYDiagram2D.AxisX>
+                    <!--endregion #CrosshairAxisLabelPattern-->
+
+                    <!--region #CrosshairLabelPattern-->
+                    <dxc:XYDiagram2D.Series>
+                        <dxc:LineSeries2D DisplayName="Europe" 
+                                          CrosshairLabelPattern="{}{S} population: {V}">
+                            <dxc:LineSeries2D.Points>
+                                <dxc:SeriesPoint Argument="1950" Value="546" />
+                                <dxc:SeriesPoint Argument="1960" Value="605" />
+                                <dxc:SeriesPoint Argument="1970" Value="656" />
+                                <dxc:SeriesPoint Argument="1980" Value="694" />
+                                <dxc:SeriesPoint Argument="1990" Value="721" />
+                                <dxc:SeriesPoint Argument="2000" Value="730" />
+                                <dxc:SeriesPoint Argument="2010" Value="728" />
+                                <dxc:SeriesPoint Argument="2020" Value="721" />
+                                <dxc:SeriesPoint Argument="2030" Value="704" />
+                                <dxc:SeriesPoint Argument="2040" Value="680" />
+                                <dxc:SeriesPoint Argument="2050" Value="650" />
+                            </dxc:LineSeries2D.Points>
+                        </dxc:LineSeries2D>
+                        <dxc:LineSeries2D  DisplayName="Americas" 
+                                           CrosshairLabelPattern="{}{S} population: {V} ">
+                            <dxc:LineSeries2D.Points>
+                                <dxc:SeriesPoint Argument="1950" Value="332" />
+                                <dxc:SeriesPoint Argument="1960" Value="417" />
+                                <dxc:SeriesPoint Argument="1970" Value="513" />
+                                <dxc:SeriesPoint Argument="1980" Value="614" />
+                                <dxc:SeriesPoint Argument="1990" Value="721" />
+                                <dxc:SeriesPoint Argument="2000" Value="836" />
+                                <dxc:SeriesPoint Argument="2010" Value="935" />
+                                <dxc:SeriesPoint Argument="2020" Value="1027" />
+                                <dxc:SeriesPoint Argument="2030" Value="1110" />
+                                <dxc:SeriesPoint Argument="2040" Value="1178" />
+                                <dxc:SeriesPoint Argument="2050" Value="1231" />
+                            </dxc:LineSeries2D.Points>
+                        </dxc:LineSeries2D>
+                    </dxc:XYDiagram2D.Series>
+                    <!--endregion #CrosshairLabelPattern-->
+                </dxc:XYDiagram2D>
+            </dxc:ChartControl.Diagram>
+        </dxc:ChartControl>
+    </Grid>
+</Window>
