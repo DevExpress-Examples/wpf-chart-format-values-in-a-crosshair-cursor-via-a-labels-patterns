@@ -1,3 +1,8 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainWindow.xaml](./CS/UsingCrosshairLabelPattern/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/UsingCrosshairLabelPattern/MainWindow.xaml))
+<!-- default file list end -->
 # How to format values in a crosshair cursor via a label's patterns
 
 
