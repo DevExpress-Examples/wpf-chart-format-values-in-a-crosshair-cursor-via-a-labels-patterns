@@ -15,7 +15,7 @@ Specify a displayed pattern within a crosshair label with the following properti
 * [XYSeries2D.CrosshairLabelPattern](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.XYSeries2D.CrosshairLabelPattern)
 * [CrosshairOptions.GroupHeaderPattern](https://docs.devexpress.com/WPF/DevExpress.Xpf.Charts.CrosshairOptions.GroupHeaderPattern)
 
-You cab use standard and custom format specifiers are used together with the placeholders to format numeric and date/time values (e.g., {A:F0}). 
+You can use standard and custom format specifiers are used together with the placeholders to format numeric and date/time values (e.g., {A:F0}). 
 
 ## Files to Review
 
