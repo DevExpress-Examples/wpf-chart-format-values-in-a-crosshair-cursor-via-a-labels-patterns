@@ -5,7 +5,7 @@
 
 # Chart for WPF -  How to Format Values in a Crosshair Cursor with Label Patterns
 
-This example demonstrates how to change a text displayed in crosshair labels with crosshair patterns. 
+This example demonstrates how to change text displayed in crosshair labels with crosshair patterns. 
 
 ![Chart](./images/Chart.png)
 
